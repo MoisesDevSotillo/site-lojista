@@ -29,7 +29,7 @@ const SalesScreen = ({ user, onLogout }) => {
     const fetchSalesData = async () => {
       try {
         const token = localStorage.getItem('token')
-        const response = await fetch('http://localhost:5000/api/reports/sales-by-store', {
+        const response = await fetch('https://wendy-backend1.onrender.com', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
