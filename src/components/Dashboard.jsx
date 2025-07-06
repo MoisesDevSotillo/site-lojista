@@ -37,7 +37,7 @@ const Dashboard = ({ user, onLogout }) => {
     const fetchDashboardData = async () => {
       try {
         const token = localStorage.getItem('token') // Obter o token JWT
-        const response = await fetch('http://localhost:5000/api/reports/sales-by-store', {
+        const response = await fetch('https://wendy-backend1.onrender.com', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
